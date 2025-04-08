@@ -41,7 +41,7 @@ jobs:
 
     environment:
       name: production
-      url: $ {{ steps.deployment.outputs.pae_url }}
+      url: ${{ steps.deployment.outputs.pae_url }}
 
     runs-on: ubuntu-latest
 
@@ -49,7 +49,7 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v4
         with:
-          token: $ {{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: use node.js 
         uses: actions/setup-node@v4
         with: 
