@@ -41,7 +41,7 @@ jobs:
 
     environment:
       name: production
-      url: ${{ steps.deployment.outputs.pae_url }}
+      url: ${{ steps.deployment.outputs.page_url }}
 
     runs-on: ubuntu-latest
 
